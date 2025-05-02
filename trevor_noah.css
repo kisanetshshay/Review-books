@@ -1,0 +1,727 @@
+@font-face {
+    font-family: nunito;
+    src: url(fontsAndImages/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: ku;
+    src: url(fontsAndImages/Kurale-Regular.ttf);
+}
+@font-face {
+    font-family: script ;
+    src: url(fontsAndImages/StyleScript-Regular.ttf
+    );
+}
+@font-face {
+    font-family: prof;
+    src: url(fontsAndImages/Dosis/Dosis-VariableFont_wght.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    margin-top: 0;
+
+}
+.navigations {
+    align-items: center;
+    font-family: nunito;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+
+}
+
+.advert {
+    text-align: center;
+    height: 4vh;
+    background-color: #012326;
+    color: white;
+    padding: 0.2%;
+
+    p {
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #e3e4b8;
+    }
+}
+
+
+
+
+nav {  
+    padding-top: 2vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 13vw;
+    background-color: white;
+
+
+    img {
+        height: 50px;
+    }
+
+    a {
+        margin-left: 5%;
+        text-decoration: none;
+        color: rgb(175, 42, 42);
+        font-size: large;
+
+    }
+
+}
+.button {
+    cursor: pointer;
+    right: 4vw;
+    color: #012326;
+    width: 7vw;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #A61F2B;
+}
+
+nav a:hover {
+    color: #234457;
+}
+
+.nav-links {
+    width: 60%;
+    align-items: center;
+}
+.bookCover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://calisphere.org/clip/500x500/17669/7ae6d753bd08077df08fe9b9bd8bd8cd');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+
+    img {
+        padding: 0.1%;
+        background-color: #234457;
+        position: absolute;
+        width: 22vw;
+        border-radius: 10px;
+        left: 33%;
+        top: 55vh;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+.bornCrime {
+    width: 30vw;
+    margin: auto;
+    padding-left: 25vw;
+    padding-top: 30vh;
+
+    h1 {
+        font-family: nunito;
+        color: #537e96;
+        font-size: 400%;
+
+
+    }
+
+    h2 {
+        font-family: nunito;
+        color: #537e96;
+        font-size: xx-large;
+    }
+
+    p {
+        font-size: large;
+        line-height: 1.5;
+        font-family: ku;
+        color: #e3e4b8;
+    }
+
+    button {
+        color: #234457;
+        font-size: large;
+        cursor: pointer;
+        width: 10vw;
+        height: 5vh;
+        border-radius: 10px;
+        border: 2px solid #234457;
+    }
+
+
+}
+
+.bornCrime button:hover {
+    background-color: #e3e4b8;
+    border: transparent;
+    color: #234457;
+
+}
+
+.aboutAuthor {
+    width: 100vw;
+
+}
+
+.aboutTrevor {
+    border: 3px solid #234457;
+    padding: 2% 5%;
+}
+
+.author {
+    height: 50vh;
+    width: 70%;
+    margin: 15vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 20vw;
+        border-radius: 5px;
+
+
+    }
+
+    p {
+        font-family: ku;
+        width: 35vw;
+        font-size: large;
+        line-height: 1.5;
+
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    h2 {
+        color: #A61F2B;
+        font-size: xx-large;
+    }
+}
+
+/* Berrisa */
+.book-theme-section {
+    width: 100vw;
+    background-color: #F2F2F0;
+    padding-top: 3%;
+
+    h1 {
+        color: #A61F2B;
+        text-align: center;
+        font-size: 400%;
+        font-family: prof;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: ku;
+
+    }
+
+}
+
+.themes {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+}
+
+
+.theme {
+    margin: auto;
+    margin-bottom: 3vh;
+    align-items: center;
+    display: flex;
+    gap: 4vw;
+
+    h2 {
+        color: #3c4e58;
+        font-size: 200%;
+        font-family: prof;
+
+    }
+
+}
+
+
+#themeHead {
+    font-size: x-large;
+    color: #A61F2B;
+}
+
+.theme-navigations {
+    position: sticky;
+    top: 30vh;
+    width: 13vw;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+
+    a {
+        color: #234457;
+        font-size: medium;
+        text-decoration: none;
+
+    }
+}
+
+.theme-navigations a:hover {
+    color: gray;
+}
+
+.themes-img {
+
+    height: 40vh;
+    width: 30vw;
+}
+
+.theme-content {
+    width: 40vw;
+    height: 60vh;
+    overflow-y: hidden;
+    overflow-y: scroll;
+
+    p {
+        font-size: 17px;
+        line-height: 1.5;
+        font-family: ;
+    }
+
+}
+
+
+/* Kisanet */
+
+#reviews {
+    width: 70vw;
+    margin: auto;
+    padding: 3vh;
+    text-align: center;
+
+    h1 {
+        font-size: xxx-large;
+        font-family: nunito;
+        color: #A61F2B;
+    }
+
+}
+
+.review-section {
+    padding-top: 5%;
+    width: 100vw;
+    background-color: #F2F2F0;
+
+}
+
+#review-title {
+    padding: 0 0 5vh;
+    width: 80vw;
+    margin: auto;
+    color: #234457;
+    font-size: large;
+}
+
+.all-reviews {
+    width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review {
+    background-color: white;
+    border-radius: 1%;
+    width: 20vw;
+    border: 1px solid black;
+    margin-bottom: 5vh;
+
+    img {
+        width: 20vw;
+        height: 30vh;
+    }
+}
+
+.review-profile {
+    gap: 1vw;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    color: #234457;
+
+    img {
+        width: 3vw;
+        height: 4vw;
+        border-radius: 50%;
+    }
+}
+
+
+.review-detail a:hover {
+    color: #A61F2B;
+}
+
+.review-texts {
+    padding: 1vw 1vw 0;
+    gap: 10%;
+    margin-bottom: 5vh;
+
+    a {
+        text-decoration: none;
+        color: rgb(128, 126, 126);
+    }
+
+}
+
+.read-more {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(128, 126, 126);
+
+}
+
+.view {
+    width: 10vw;
+    display: flex;
+    gap: 1vw;
+
+    p {
+        margin-right: 5;
+        display: inline;
+    }
+
+}
+
+/* mine */
+.summary-section {
+    padding: 5vh 0 9vh;
+    width: 100vw;
+    margin: 10vh auto;
+    background-color: #F2F2F0;
+
+    h1 {
+        color: #A61F2B;
+        text-align: center;
+        font-size: 400%;
+        font-family: prof;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: ku;
+        width: 45vw;
+        margin: auto;
+
+    }
+}
+
+
+/* Footer */
+
+footer {
+    padding-top: 3vh;
+    height: 35vh;
+    width: 100vw;
+    background-color: #17242b;
+
+    a {
+        color: white;
+        font-size: small;
+    }
+
+    h2 {
+        font-size: xxx-large;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+#socials {
+    width: 35vw;
+    position: absolute;
+    gap: 4%;
+    left: 50%;
+    padding-top: 33vh;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    padding-top: 10vh;
+    font-size: large;
+    color: white;
+}
+
+.join-us input {
+    margin-top: 2vh;
+    width: 25vw;
+    height: 5vh;
+}
+
+.join-us button {
+    cursor: pointer;
+    width: 10vw;
+    height: 5vb;
+}
+
+.join-us button:hover {
+    background-color: #234457;
+    color: white;
+}
+
+@media (max-width:430px) and (min-width:0px) {
+    .advert {
+        font-size: x-small;
+        padding: 1vh;
+        height: 3vh;
+
+    }
+
+    nav {
+
+        width: 100vw;
+        text-align: center;
+        gap: 1vw;
+
+        img {
+            height: 25px;
+        }
+
+        a {
+            font-size: small;
+            margin-left: 3%;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+
+    .bookCover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://static.wixstatic.com/media/84770f_75611f4d24e54771a4ed30d83293da87~mv2.jpg/v1/fill/w_1905,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_75611f4d24e54771a4ed30d83293da87~mv2.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .bookCover img {
+position: absolute;
+
+top: 28vh;
+left: 15vw;
+    }
+
+    .bornCrime {
+        width: 50%;
+margin-left: 5% ;  
+margin-top: 0%;
+margin-top: -30%;
+
+    }
+
+    .bornCrime h1 {
+        font-size: x-large;
+    }
+
+    .bornCrime h2 {
+        font-size: large;
+    }
+
+    .bornCrime p {
+        line-height: 1;
+        font-size: 15px;
+
+    }
+
+    .bornCrime button {
+
+        width: 20vw;
+        font-size: 0.7rem;
+        border-radius: 8px;
+        border: 2px solid #234457;
+        color: #234457;
+        background-color: transparent;
+        cursor: pointer;
+        margin-bottom: 5vh;
+
+    }
+
+    .aboutAuthor {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -40% auto 0 ;
+    }
+
+    .author { 
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+        margin-top: 145%;
+    }
+
+    .author img {
+        width: 100%;
+        /* height: auto; */
+        border-radius: 5px;
+
+    }
+
+    .author p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .author span {
+        font-weight: bold;
+    }
+
+    .author h2 {
+        color: #A61F2B;
+        font-size: 1.2rem;
+    }
+
+    .book-theme-section {
+        margin-top: -5%;
+        background-color: #F2F2F0;
+        h1{
+
+            font-size: x-large;
+            margin: auto;
+        }
+        img{
+            height: 30vw;
+        }
+    }
+
+    .themes {
+
+        display: flex;
+        gap: 20px;
+    }
+
+    #theme {
+        padding-top: 15vh;
+        padding-bottom: 5vh;
+        margin-top: -60%;
+    }
+
+    .theme {
+        width: 100%;
+        flex-direction: column;
+    }
+    .themes-topic{
+        margin-left: -15%;
+        width: 20vw;
+        font-size: small;
+        a{
+        font-size: small;
+
+            
+        }
+    }
+    .theme h2 {
+        font-size: large;
+        width: 50vw;
+        
+    }
+
+    .theme-content {
+        overflow-y: auto;
+       width: 60vw;
+    }
+
+    .theme-content p {
+        font-size: 16px;
+        
+    }
+
+.summary-section{
+    h1{
+        font-size: xx-large;
+        margin-top: -33%;
+    }
+    p{
+        font-size: small;
+        width: 80%;
+    }
+}
+.review-section h1{
+ margin-top: -60%;
+
+  }  
+  .review{
+    width: 80vw;
+  }
+.review img{
+    width: 100%;
+}
+.review-profile{
+    img{
+        height: 15vw;
+        width: 15vw;
+    }
+}
+
+footer {
+    h2 {
+        font-size: medium;
+        font-weight: lighter;
+        margin-bottom: 5vh;
+    }
+}
+.join-us {
+    width: 80vw;
+    font-weight: lighter;
+}
+label {
+    font-size: x-small;
+    padding-top: 3vh;
+}
+#socials {
+    margin-top: 3vh;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    font-size: xx-small;
+}
+.join-us input {
+    margin-top: 4vh;
+    width: 50vw;
+}
+.join-us button {
+    margin-top: 3vh;
+    margin-left: 10vw;
+    width: 32vw;
+}
+.fa-brands {
+    font-size: small;
+}
+
+}

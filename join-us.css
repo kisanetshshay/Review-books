@@ -1,0 +1,327 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+width: 100vw;    
+margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: nunito;
+    src: url(fontsAndImages/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ku;
+    src: url(fontsAndImages/Kurale-Regular.ttf);
+}
+
+@font-face {
+    font-family: script;
+    src: url(fontsAndImages/StyleScript-Regular.ttf
+);
+}
+
+@font-face {
+    font-family: prof;
+    src: url(fontsAndImages/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+.navigations {
+    font-family: nunito;
+    position: absolute;
+    top: -1.7vh;
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+
+}
+
+.advertisement{
+    text-align: center;
+    height: 4vh;
+    background-color: #012326;
+    color: white;
+    padding: 0.2%;
+
+    p {
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #e3e4b8;
+    }
+}
+
+
+
+
+nav {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 13vw;
+    background-color: white;
+
+    img {
+        height: 70px;
+    }
+
+    a {
+        margin-left: 5%;
+        text-decoration: none;
+        color: rgb(175, 42, 42);
+        font-size: large;
+
+    }
+
+}
+
+.button {
+    cursor: pointer;
+    color: #012326;
+    width: 7vw;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #A61F2B;
+}
+
+nav a:hover {
+    color: #234457;
+}
+
+.nav-links {
+    width: 50%;
+}
+
+.title{
+    margin: 15vh auto 5vh;
+    font-size: xxx-large;
+    font-family: ku;
+    text-align: center;
+    color: #A61F2B;
+}
+
+.advert{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+
+ }
+ .advertText{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: xx-large;
+    font-family: script;
+    color: #012326;
+    width: 25vw;
+    span{
+color: #A61F2B;  
+font-size: xxx-large;  }
+
+ }
+
+ .socialmedia-card img{
+height: 50vh;
+ }
+ #flower{
+    position: absolute;
+    width: 7vw;
+    transform: rotate(30deg);
+    right: 9vw;
+    z-index: -1;
+ }
+ #flower2{
+    margin-left: 8%;
+    width: 8vw;
+ }
+
+ 
+ .socialmedia-card{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+ 
+ 
+ }
+ 
+footer {
+    padding-top: 3vh;
+    height: 35vh;
+    width: 100vw;
+    background-color: #17242b;
+
+    a {
+        color: white;
+        font-size: small;
+    }
+
+    h2 {
+        font-size: xxx-large;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+#socials {
+    width: 35vw;
+    position: absolute;
+    gap: 4%;
+    left: 50%;
+    padding-top: 33vh;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+form{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    padding-top: 10vh;
+    font-size: large;
+    color: white;
+}
+.join-us input{
+    margin-top: 2vh;
+    width: 25vw;
+    height: 5vh;
+}
+.join-us button{
+    cursor: pointer;
+    width: 10vw;
+    height: 5vb;
+}
+.join-us button:hover{
+    background-color: #234457;
+    color: white;
+}
+
+@media (max-width: 750px) {
+    .navigations{
+        width: 100vw;
+        a{
+            font-size: small;
+        }
+        
+    }
+    .advertisement{
+        width: 100vw;
+        height: 6vh;
+        font-size: x-small;
+        a{
+            font-size: small;
+        }
+    }
+    .title{
+        font-size: large;
+    }
+    .socialmedia-card{
+flex-direction: column;        
+    }
+    .advertText{
+        font-size: large;
+        width: 80vw;
+        span{
+            font-size: x-large;
+        }
+    }
+    .advert{
+        flex-direction: column;
+        img{
+margin-left: 5vw;            height: 50vh
+
+        }
+    }
+    #flower2{
+        width: 20vw;
+        height: auto;
+    }
+    footer{
+        h2{
+            font-size: large;
+        }
+    }
+    #socials{
+        p{
+            font-size: x-small;
+        }
+        width: 90vw;
+    }
+
+
+}
+
+@media (min-width: 751px) and (max-width:999px) {
+    .navigations{
+        padding-left: 10v;
+        a{
+            font-size: medium;
+        }
+    }
+
+    .advertisement{
+        width: 100vw;
+        height: 4vh;
+    }
+    .title{
+        font-size: large;
+    }
+    .socialmedia-card{
+flex-direction: column;
+img{
+    margin-left: 5vw;
+}
+    }
+    .advertText{
+        font-size: large;
+        width: 80vw;
+        span{
+            font-size: x-large;
+        }
+    }
+    .advert{
+        flex-direction: column;
+        img{
+margin-left: 20vw;         
+   height: 50vh
+
+        }
+    }
+    #flower2{
+        width: 20vw;
+        height: auto;
+    }
+    footer{
+        h2{
+            font-size: large;
+        }
+    }
+    #socials{
+        p{
+            font-size: x-small;
+        }
+        width: 90vw;
+    }
+
+
+}
+
+@media (min-width: 1000px) and (max-width:1300px){
+body{
+    overflow-x: hidden;
+}
+.advertisement{
+    height: 6vh;
+}
+footer{
+    height: 45vh;
+    width: 100vw;
+}
+}

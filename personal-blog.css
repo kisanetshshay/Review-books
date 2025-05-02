@@ -1,0 +1,412 @@
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+@font-face {
+    font-family: nunito;
+    src: url(fontsAndImages/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ku;
+    src: url(fontsAndImages/Kurale-Regular.ttf);
+}
+
+@font-face {
+    font-family: script;
+    src: url(fontsAndImages/StyleScript-Regular.ttf
+);
+}
+
+@font-face {
+    font-family: prof;
+    src: url(fontsAndImages/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+body {
+
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.027);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -9%;
+    font-family:ku;
+}
+
+h1 {
+    color: #333;
+    font-family:nunito;
+}
+h2{
+    color: #333;
+    font-family:nunito;
+}   
+
+.quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    background-color:rgba(128, 128, 128, 0.158);
+    padding: 10px;
+}
+
+p {
+    line-height: 1.6;
+    color: #444;
+}
+
+
+.responsive-image {
+    width: 100%;
+    height: 10%;
+    margin: 20px 0;
+}
+.navigation{
+    font-family: nunito;
+    position: absolute;
+    top: -1.7vh;
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+    
+    }
+    
+    .advert p{
+        color: white;
+    
+        
+    
+    }
+    .advert {
+    text-align: center;
+    height: 4vh;
+    background-color: #012326;
+    color: white;
+    padding: 0.2%;
+    
+    p {
+        align-items: center;
+
+    }
+    
+    a {
+        text-decoration: none;
+        color: #e3e4b8;
+    }
+    }
+
+    
+    nav {
+    
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13vw;
+    background-color: white;
+    
+    img {
+        height: 70px;
+    }
+    
+    a {
+        margin-left: 5%;
+        text-decoration: none;
+        color:rgb(165, 42, 42);
+        font-size: large;
+    
+    }
+    
+    }
+    
+    .button {
+    cursor: pointer;
+    right: 4vw;
+    color: #012326;
+    width: 7vw;
+    }
+    
+    .button:hover {
+    background-color: transparent;
+    color: #A61F2B;
+    }
+    
+    nav a:hover {
+    color: #234457;
+    }
+    
+    .nav-links {
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 15%;
+    }
+    
+    .body-section{
+        width: 40vw;
+        margin: 20vh auto;
+        margin-top: 9%;
+    }
+    .profile{
+        font-family: nunito;
+        align-items: center;
+        display: flex;
+        img{
+            border-radius: 10cm;
+            width: 3cm;
+            height:3cm;
+            margin-top: -3cm;
+    
+        }
+        gap: 1vw;
+        p{
+            margin-top: -2cm;
+        }
+     }
+     footer {
+        padding-top: 3vh;
+        height: 35vh;
+        width: 100%;
+        background-color:black;
+    
+        a {
+            color: white;
+            font-size: small;
+        }
+    
+        h2 {
+            font-size: xxx-large;
+            color: white;
+            text-align: center;
+        }
+    
+    }
+    
+    #socials {
+        width: 35vw;
+        position: absolute;
+        gap: 4%;
+        left: 50%;
+        padding-top: 33vh;
+        transform: translate(-50%, -50%);
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    
+    form{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50vw;
+        padding-top: 10vh;
+        font-size: large;
+        color: white;
+    }
+    .join-us input{
+        margin-top: 2vh;
+        width: 25vw;
+        height: 5vh;
+        cursor: pointer;
+    }
+    #button{
+        
+        width: 10vw;
+        height: 5vb;
+    
+    }
+    #button:hover{
+        background-color: #234457;
+        color: white;
+        
+    }
+
+     .fa-brands{
+        text-align: center;
+        font-size: 1.5em;
+      
+     }
+     .fa-brands{
+        text-align: center;
+        font-size: 1.5em;
+      
+     }
+     
+     .fa-brands{
+        text-align: center;
+        font-size: 1.5em;
+      
+     }
+     .socials{
+        display: flex;
+        gap: 3em;
+        margin-left: 65%;
+       
+       a{
+        color: rgb(34, 32, 32);
+    
+       }}
+     
+     
+     .hr-line{
+        position: relative;
+        max-width: 50%;
+        margin: 30px auto;
+        height: 1px;
+        background-color: black;
+     }
+
+
+     #comment{
+        font-size: 2em;
+        text-align: center;
+     }
+     #input{
+        width: 30vw;
+            text-align: center;
+            padding: 2em;
+            margin-bottom:5em;
+            margin-left: 30%;
+          
+         }
+         #submit{
+            position: absolute;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            padding: 1.5em;
+            width: 13em;
+            background-color: #234457;
+            border: none;
+            border-radius: 1em;
+            margin-top: 2.6em;
+            text-align: center;
+            cursor: pointer;
+            color: white;
+           
+         }
+         #submit:hover{
+            background-color: #A61F2B;
+            color: white
+         }
+
+
+    @media (max-width:430px) and (min-width:0px) {
+        footer {
+            h2 {
+                font-size: medium;
+                font-weight: lighter;
+                margin-bottom: 5vh;
+            }
+        }
+        .join-us {
+            width: 80vw;
+            font-weight: lighter;
+        }
+        label {
+            font-size: x-small;
+            padding-top: 3vh;
+        }
+        #socials {
+            margin-top: 3vh;
+            align-items: center;
+            text-align: center;
+            width: 100vw;
+            font-size: xx-small;
+            margin-left:4%;
+        }
+        .join-us input {
+            margin-top: 4vh;
+            width: 50vw;
+        }
+        .join-us button {
+            margin-top: 3vh;
+            margin-left: 10vw;
+            width: 32vw;
+        }
+        .fa-brands {
+            font-size: x-small;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: -39%;
+        }
+        .body-section{
+            width: 40vw;
+            margin: 20vh auto;
+            margin-top: 37%;
+        }
+        .profile{
+            font-family: nunito;
+            align-items: center;
+            display: flex;
+            img{
+                border-radius: 10cm;
+                width: 3cm;
+                height:3cm;
+                margin-top: -3cm;
+        
+            }
+            gap: 4vw;
+            p{
+                margin-top: -2cm;
+            }
+         }
+         #comment{
+            font-size: 2em;
+            text-align: center;
+         }
+         #input{
+            width: 30vw;
+                text-align: center;
+                padding: 2em;
+                margin-bottom:5em;
+                margin-left: 20%;
+              
+             }
+             #submit{
+                position: absolute;
+                left: 80%;
+                transform: translate(-50%, -50%);
+                padding: 1.5em;
+                width: 7em;
+                background-color: #234457;
+                border: none;
+                border-radius: 1em;
+                margin-top: 2.6em;
+                text-align: center;
+                cursor: pointer;
+                color: white;
+               
+             }
+
+             .socials{
+                display: flex;
+                gap: 3em;
+                margin-left: 28%;
+               
+               a{
+                color: rgb(34, 32, 32);
+            
+               }}
+               .advert p{
+                color: white;
+                margin-top: 2%;
+            
+            }
+            
+        }
+    
+    

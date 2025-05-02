@@ -1,0 +1,1029 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(fontsAndImages/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ku;
+    src: url(fontsAndImages/Kurale-Regular.ttf);
+}
+
+@font-face {
+    font-family: script;
+    src: url(fontsAndImages/StyleScript-Regular.ttf
+);
+}
+
+@font-face {
+    font-family: prof;
+    src: url(fontsAndImages/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+.navigations {
+    align-items: center;
+    font-family: nunito;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+
+}
+
+.advert {
+    text-align: center;
+    height: 4vh;
+    background-color: #012326;
+    color: white;
+    padding: 0.2%;
+
+    p {
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #e3e4b8;
+    }
+}
+
+
+
+
+nav {
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 13vw;
+    background-color: white;
+
+
+    img {
+        height: 50px;
+    }
+
+    a {
+        margin-left: 5%;
+        text-decoration: none;
+        color: rgb(175, 42, 42);
+        font-size: large;
+
+    }
+
+}
+.button {
+    cursor: pointer;
+    right: 4vw;
+    color: #012326;
+    width: 7vw;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #A61F2B;
+}
+
+nav a:hover {
+    color: #234457;
+}
+
+.nav-links {
+    width: 60%;
+    align-items: center;
+}
+
+.hero-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://static.wixstatic.com/media/84770f_75611f4d24e54771a4ed30d83293da87~mv2.jpg/v1/fill/w_1905,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_75611f4d24e54771a4ed30d83293da87~mv2.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    height: 80vh;
+}
+
+.books-section {
+    width: 60vw;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-books {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 1vw;
+    background-color: #e7e7ce;
+    padding: 1vh;
+    align-items: center;
+    width: 20vw;
+    box-shadow: 4px 4px 5px rgba(0.2, 0, 0.4, 0.3);
+
+    p {
+        width: 20vw;
+        color: #17242b;
+        font-family: ku;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-family: nunito;
+        color: #A61F2B;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: nunito;
+        color: #234457;
+
+    }
+}
+
+.text-books p i {
+    color: rgb(139, 0, 0);
+    font-weight: 900;
+}
+
+.text-books img {
+    width: 10vw;
+    border-radius: 1vw;
+    margin-left: 5vw;
+}
+
+.text-books:hover {
+    transform: scale(1.02);
+
+}
+
+.book-cover {
+    background-color: white;
+    position: absolute;
+    left: 50vw;
+    top: 17vw;
+    transform: translate(-50%, -50%);
+    padding: 3vh 5vw;
+}
+
+.book-cover h1,
+h3 {
+    font-family: nunito;
+    color: rgb(92, 9, 9);
+    text-align: center;
+
+
+}
+
+#books-section {
+    width: 70vw;
+    margin: auto;
+    padding-top: 9vh;
+    text-align: center;
+
+    h1 {
+        font-size: xxx-large;
+        font-family: nunito;
+        color: #A61F2B;
+    }
+}
+
+
+.upComing {
+    width: 80vw;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#upcoming {
+    width: 70vw;
+    margin: auto;
+    padding: 3vh;
+    text-align: center;
+
+    h1 {
+        font-size: xxx-large;
+        font-family: nunito;
+        color: #A61F2B;
+    }
+
+}
+
+.about-us {
+    width: 70vw;
+    margin: auto;
+    padding: 3vh;
+
+    h1 {
+        font-size: xxx-large;
+        font-family: nunito;
+        color: #A61F2B;
+    }
+
+    p {
+        width: 30vw;
+        font-size: large;
+        font-family: nunito;
+
+    }
+}
+
+/*  */
+
+footer {
+    padding-top: 3vh;
+    height: 35vh;
+    width: 100vw;
+    background-color: #17242b;
+    font-family: nunito;
+
+    a {
+        color: white;
+        font-size: small;
+    }
+
+    h2 {
+        font-size: xxx-large;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+#socials {
+    width: 35vw;
+    position: absolute;
+    gap: 4%;
+    left: 50%;
+    padding-top: 33vh;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    padding-top: 10vh;
+    font-size: large;
+    color: white;
+}
+
+.join-us input {
+    margin-top: 2vh;
+    width: 25vw;
+    height: 5vh;
+}
+
+.join-us button {
+    cursor: pointer;
+    width: 10vw;
+    height: 5vh;
+}
+
+.join-us button:hover {
+    background-color: #234457;
+    color: white;
+}
+
+@media (max-width: 350px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .advert {
+        height: 5vh;
+        width: 100vw;
+        font-size: x-small;
+
+        p {
+            margin: auto;
+            width: 90vw;
+        }
+    }
+
+    nav {
+        width: 100vw;
+        text-align: center;
+        gap: 1vw;
+
+        img {
+            height: 25px;
+        }
+
+        a {
+            font-size: small;
+            margin-left: 0%;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .book-cover {
+        top: 40vh;
+        width: 80vw;
+        height: 25vh;
+
+        h1 {
+            font-size: x-large;
+        }
+
+        h3 {
+            font-size: large;
+        }
+    }
+
+    #books-section {
+        padding-top: 1vh;
+
+        h1 {
+            font-size: large;
+        }
+    }
+
+    .books-section {
+        flex-direction: column;
+        width: 80vw;
+    }
+
+
+    .text-books {
+        width: 70vw;
+        margin: auto;
+        margin-bottom: 3vh;
+
+        p {
+            font-size: 15px;
+            margin: auto;
+            width: 60vw;
+        }
+
+        h1 {}
+
+        img {
+            width: 60vw;
+
+        }
+
+    }
+
+    #upcoming {
+        padding: 0;
+
+        h1 {
+
+            font-size: large;
+
+        }
+    }
+
+    .upComing {
+        flex-direction: column;
+    }
+
+    .about-us {
+        h1 {
+
+            font-size: large;
+
+        }
+
+        p {
+            width: 80vw;
+            font-size: small;
+        }
+    }
+
+    footer {
+        h2 {
+            font-size: medium;
+            font-weight: lighter;
+        }
+    }
+
+    .join-us {
+        width: 80vw;
+        font-weight: lighter;
+
+    }
+
+    label {
+        font-size: x-small;
+    }
+
+    #socials {
+        margin-top: 5vw;
+        width: 100vw;
+        font-size: xx-small;
+
+    }
+
+    .join-us input {
+        margin-top: 4vh;
+        width: 50vw;
+    }
+
+    .join-us button {
+        width: 20vw;
+    }
+
+    .fa-brands {
+        font-size: small;
+    }
+}
+
+
+
+@media (min-width: 351px) and (max-width: 430px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .advert {
+        height: 3vh;
+        width: 100vw;
+        font-size: x-small;
+        padding-bottom: 1vh;
+        p {
+            margin: 3% auto;
+            width: 90vw;
+        }
+    }
+
+    nav {
+        width: 100vw;
+        text-align: center;
+        gap: 1vw;
+
+        img {
+            height: 25px;
+        }
+
+        a {
+            font-size: small;
+            margin-left: 0%;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .book-cover {
+        top: 40vh;
+        width: 80vw;
+        height: 15vh;
+
+        h1 {
+            font-size: x-large;
+        }
+
+        h3 {
+            font-size: large;
+        }
+    }
+
+    #books-section {
+        padding-top: 1vh;
+
+        h1 {
+            font-size: large;
+        }
+    }
+
+    .books-section {
+        flex-direction: column;
+        width: 80vw;
+    }
+
+
+    .text-books {
+        width: 70vw;
+        margin: auto;
+        margin-bottom: 3vh;
+
+        p {
+            font-size: 15px;
+            margin: auto;
+            width: 60vw;
+        }
+
+        h1 {}
+
+        img {
+            width: 60vw;
+
+        }
+
+    }
+
+    #upcoming {
+        padding: 0;
+
+        h1 {
+
+            font-size: large;
+
+        }
+    }
+
+    .upComing {
+        flex-direction: column;
+    }
+
+    .about-us {
+        h1 {
+
+            font-size: large;
+
+        }
+
+        p {
+            width: 80vw;
+            font-size: small;
+        }
+    }
+
+    footer {
+        h2 {
+            font-size: medium;
+            font-weight: lighter;
+            margin-bottom: 5vh;
+        }
+    }
+
+    .join-us {
+        width: 80vw;
+        font-weight: lighter;
+
+
+    }
+
+    label {
+        font-size: x-small;
+        padding-top: 3vh;
+    }
+
+    #socials {
+        margin-top: 5vw;
+        width: 100vw;
+        font-size: xx-small;
+
+    }
+
+    .join-us input {
+        margin-top: 4vh;
+        width: 50vw;
+    }
+
+    .join-us button {
+        margin-top: 3vh;
+        margin-left: 10vw;
+        width: 32vw;
+    }
+
+    .fa-brands {
+        font-size: small;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .advert {
+        height: 3vh;
+        width: 100vw;
+        font-size: x-small;
+
+        p {
+            margin: auto;
+            width: 90vw;
+        }
+    }
+
+    nav {
+        width: 100vw;
+        text-align: center;
+        gap: 1vw;
+
+        img {
+            height: 25px;
+        }
+
+        a {
+
+            font-size: small;
+            margin-left: 3%;
+        }
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .book-cover {
+        top: 40vh;
+        width: 80vw;
+        height: 15vh;
+
+        h1 {
+            font-size: x-large;
+        }
+
+        h3 {
+            font-size: large;
+        }
+    }
+
+    #books-section {
+        padding-top: 3vh;
+        padding-bottom: 0;
+
+        h1 {
+            font-size: x-large;
+        }
+    }
+
+    .books-section {
+        flex-direction: column;
+        width: 80vw;
+    }
+
+
+    .text-books {
+        width: 70vw;
+        margin: auto;
+        margin-bottom: 3vh;
+
+        p {
+            font-size: 15px;
+            margin: auto;
+            width: 60vw;
+        }
+
+        h1 {}
+
+        img {
+            width: 50vw;
+            height: 50vh;
+            margin-left: 15%;
+
+        }
+
+    }
+
+    #upcoming {
+        padding: 0;
+        margin: 0 auto;
+
+        h1 {
+
+            font-size: xx-large;
+
+        }
+    }
+
+    .upComing {
+        flex-direction: column;
+    }
+
+    .about-us {
+        h1 {
+
+            font-size: large;
+
+        }
+
+        p {
+            width: 80vw;
+            font-size: small;
+        }
+    }
+
+    footer {
+        h2 {
+            font-size: medium;
+            font-weight: lighter;
+            margin-bottom: 5vh;
+        }
+    }
+
+    .join-us {
+        width: 80vw;
+        font-weight: lighter;
+
+
+    }
+
+    label {
+        font-size: x-small;
+        padding-top: 3vh;
+    }
+
+    #socials {
+        margin-top: 3vh;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        font-size: xx-small;
+    }
+
+    .join-us input {
+        margin-top: 4vh;
+        width: 50vw;
+    }
+
+    .join-us button {
+        margin-top: 3vh;
+        margin-left: 10vw;
+        width: 32vw;
+    }
+
+    .fa-brands {
+        font-size: small;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+   
+.navigations {
+    align-items: center;
+    font-family: nunito;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+
+}
+
+.advert {
+    text-align: center;
+    height: 7vh;
+    background-color: #012326;
+    color: white;
+    padding: 0.2%;
+
+    p {
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #e3e4b8;
+   }
+}
+
+
+nav {
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 13vw;
+    background-color: white;
+
+
+    img {
+        height: 30px;
+    }
+
+    a {
+        margin-left: 1%;
+        text-decoration: none;
+        color: rgb(175, 42, 42);
+        font-size: large;
+        font-size: small;
+
+    }
+
+}
+
+.button {
+    cursor: pointer;
+    right: 4vw;
+    color: #012326;
+    width: 7vw;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #A61F2B;
+}
+
+nav a:hover {
+    color: #234457;
+}
+
+.nav-links {
+    width: 60%;
+    align-items: center;
+}
+
+.hero-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://static.wixstatic.com/media/84770f_75611f4d24e54771a4ed30d83293da87~mv2.jpg/v1/fill/w_1905,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_75611f4d24e54771a4ed30d83293da87~mv2.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    height: 80vh;
+}
+
+.text-books {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 1vw;
+    background-color: #e0e0bc;
+    padding: 1vh;
+    align-items: center;
+    width: 28vw;
+    box-shadow: 4px 4px 5px rgba(0.2, 0, 0.4, 0.3);
+
+    p {
+        width: 27vw;
+        color: #17242b;
+        font-family: ku;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-family: nunito;
+        color: #A61F2B;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: nunito;
+        color: #234457;
+
+    }
+}
+
+.text-books p i {
+    color: rgb(139, 0, 0);
+    font-weight: 900;
+}
+
+.text-books img {
+    width: 10vw;
+    border-radius: 1vw;
+    margin-left: 10vw;
+}
+
+.text-books:hover {
+    transform: scale(1.02);
+
+}
+
+.book-cover {
+    background-color: white;
+    position: absolute;
+    left: 50vw;
+    top: 27vw;
+    transform: translate(-50%, -50%);
+    padding: 3vh 5vw;
+}
+
+.book-cover h1,
+h3 {
+    font-family: nunito;
+    color: rgb(92, 9, 9);
+    text-align: center;
+
+
+}
+
+#books-section {
+    width: 90vw;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 9vh;
+    text-align: center;
+
+    h1 {
+        font-size: xx-large;
+        font-family: nunito;
+        color: #A61F2B;
+    }
+}
+
+
+.upComing {
+    width: 90vw;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#upcoming {
+    width: 70vw;
+    margin: auto;
+    padding: 3vh;
+    text-align: center;
+
+    h1 {
+        font-size: xxx-large;
+        font-family: nunito;
+        color: #A61F2B;
+    }
+
+}
+
+.about-us {
+    width: 70vw;
+    margin: auto;
+    padding: 3vh;
+
+    h1 {
+        font-size: xxx-large;
+        font-family: nunito;
+        color: #A61F2B;
+    }
+
+    p {
+        width: 30vw;
+        font-size: large;
+        font-family: nunito;
+
+    }
+}
+
+/*  */
+
+footer {
+    padding-top: 3vh;
+    height: 50vh;
+    width: 100vw;
+    background-color: #17242b;
+    font-family: nunito;
+
+    a {
+        color: white;
+        font-size: small;
+    }
+
+    h2 {
+        font-size: xxx-large;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+#socials {
+    width: 35vw;
+    position: absolute;
+    gap: 4%;
+    left: 50%;
+    padding-top: 33vh;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    padding-top: 10vh;
+    font-size: large;
+    color: white;
+}
+
+.join-us input {
+    margin-top: 2vh;
+    width: 25vw;
+    height: 5vh;
+}
+
+.join-us button {
+    cursor: pointer;
+    width: 10vw;
+    height: 5vb;
+}
+
+.join-us button:hover {
+    background-color: #234457;
+    color: white;
+}
+}

@@ -1,0 +1,988 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(fontsAndImages/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ku;
+    src: url(fontsAndImages/Kurale-Regular.ttf);
+}
+
+@font-face {
+    font-family: script;
+    src: url(fontsAndImages/StyleScript-Regular.ttf
+);
+}
+
+@font-face {
+    font-family: prof;
+    src: url(fontsAndImages/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+body {
+    margin: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    margin-top: 0;
+
+}
+
+.navigations {
+    font-family: nunito;
+    position: absolute;
+    top: -1.7vh;
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+
+}
+
+.advert {
+    text-align: center;
+    height: 4vh;
+    background-color: #012326;
+    color: white;
+    padding: 0.2%;
+
+    p {
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #e3e4b8;
+    }
+}
+
+
+
+
+nav {
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13vw;
+    background-color: white;
+
+    img {
+        height: 70px;
+    }
+
+    a {
+        margin-left: 5%;
+        text-decoration: none;
+        color: rgb(175, 42, 42);
+        font-size: large;
+
+    }
+
+}
+
+.button {
+    cursor: pointer;
+    right: 4vw;
+    color: #012326;
+    width: 7vw;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #A61F2B;
+}
+
+nav a:hover {
+    color: #234457;
+}
+
+.nav-links {
+    width: 50%;
+}
+
+.bookCover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('fontsAndImages/land.jpg');
+    width: 100vw;
+    height: 75vh;
+
+    img {
+        padding: 0.1%;
+        background-color: #012326;
+        position: absolute;
+        width: 22vw;
+        border-radius: 10px;
+        left: 33%;
+        top: 55vh;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+.bornCrime {
+
+
+    width: 30vw;
+    margin: auto;
+    padding-left: 25vw;
+    padding-top: 30vh;
+
+    h1 {
+        font-family: nunito;
+        color: #F2622E;
+        font-size: 400%;
+
+
+    }
+
+    h2 {
+        font-family: prof;
+        color: #F2622E;
+        font-size: xx-large;
+    }
+
+    p {
+        font-family: ku;
+        font-size: large;
+        line-height: 1.5;
+        color: #e3e4b8;
+    }
+
+    button {
+        color: #234457;
+        font-size: large;
+        cursor: pointer;
+        width: 10vw;
+        height: 5vh;
+        border-radius: 10px;
+        border: 2px solid transparent;
+    }
+
+
+}
+
+.bornCrime button:hover {
+    background-color: #e3e4b8;
+    border: transparent;
+    color: #F29727;
+
+}
+
+
+.aboutAuthor {
+    width: 100vw;
+
+}
+
+.aboutYaaGyass {
+    border: 3px solid #234457;
+    padding: 2% 5%;
+}
+
+.author {
+    height: 50vh;
+    width: 70%;
+    margin: 15vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 20vw;
+        border-radius: 5px;
+
+
+    }
+
+    p {
+        font-family: ku;
+        width: 35vw;
+        font-size: large;
+        line-height: 1.5;
+
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    h2 {
+        color: #f14a0e;
+        font-size: xx-large;
+        font-family: prof;
+    }
+}
+
+#flower {
+    position: absolute;
+    width: 7vw;
+    transform: rotate(30deg);
+    right: 9vw;
+    z-index: -1;
+}
+
+.book-theme-section {
+    width: 100vw;
+    background-color: #F2F2F0;
+    padding-top: 3%;
+
+    h1 {
+        color: #f14a0e;
+        text-align: center;
+        font-size: 400%;
+        font-family: prof;
+    }
+
+}
+
+.themes {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+}
+
+
+.theme {
+    margin-bottom: 15vh;
+    align-items: center;
+    display: flex;
+    gap: 4vw;
+
+    h2 {
+        color: #F2622E;
+        font-size: 200%;
+        font-family: prof;
+
+    }
+
+    h3 {
+        font-family: nunito;
+        color: rgb(92, 87, 87);
+        font-size: 150%;
+
+    }
+
+}
+
+#themeHead {
+    font-size: x-large;
+    color: #234457;
+}
+
+.theme-navigations {
+    font-family: nunito;
+    position: sticky;
+    top: 30vh;
+    width: 13vw;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+
+    a {
+        color: #F29727;
+        font-size: medium;
+        text-decoration: none;
+
+    }
+}
+
+.theme-navigations a:hover {
+    color: gray;
+}
+
+.themes-img {
+    height: 43vh;
+    width: 25vw;
+}
+
+.theme-content {
+    width: 40vw;
+    height: 60vh;
+    overflow-y: hidden;
+    overflow-y: scroll;
+
+    p {
+        font-size: 17px;
+        line-height: 1.5;
+        font-family: ku;
+
+    }
+
+}
+
+.summary-section {
+    width: 100vw;
+    margin: 5vh auto;
+    background-color: #F2F2F0;
+    padding: 3%;
+
+    h1 {
+        color: #f14a0e;
+        text-align: center;
+        font-size: 400%;
+        font-family: prof;
+    }
+
+    p {
+        font-family: ku;
+    }
+
+    img {
+        width: 20vw;
+        height: vh;
+    }
+}
+
+.book-summary {
+
+    display: flex;
+    margin: auto;
+    padding-top: 1%;
+    justify-content: space-between;
+    width: 70vw;
+
+    h1 {
+        color: #f14a0e;
+        text-align: center;
+        font-size: 400%;
+        font-family: prof;
+    }
+
+    p {
+        font-family: ku;
+    }
+}
+
+.Summary-content {
+    width: 40vw;
+    height: 60vh;
+    overflow-y: hidden;
+    overflow-y: scroll;
+
+}
+
+footer {
+    padding-top: 3vh;
+    height: 35vh;
+    width: 100vw;
+    background-color: #17242b;
+
+    a {
+        color: white;
+        font-size: small;
+    }
+
+    h2 {
+        font-size: xxx-large;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+#socials {
+    width: 35vw;
+    position: absolute;
+    gap: 4%;
+    left: 50%;
+    padding-top: 33vh;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    padding-top: 10vh;
+    font-size: large;
+    color: white;
+}
+
+.join-us input {
+    margin-top: 2vh;
+    width: 25vw;
+    height: 5vh;
+}
+
+.join-us button {
+    cursor: pointer;
+    width: 10vw;
+    height: 5vb;
+}
+
+.join-us button:hover {
+    background-color: #234457;
+    color: white;
+}
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+
+    .advert {
+        font-size: x-small;
+        padding: 1vh;
+        height: 3vh;
+    }
+
+    nav {
+        width: 100vw;
+        text-align: center;
+        gap: 1vw;
+
+        img {
+            height: 25px;
+        }
+
+        a {
+            font-size: small;
+            margin-left: 3%;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .bookCover {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .bookCover img {
+        position: absolute;
+        top: 28vh;
+        left: 15vw;
+    }
+
+    .bornCrime {
+        width: 50%;
+        margin-left: 5%;
+        margin-top: 0%;
+        margin-top: -30%;
+    }
+
+    .bornCrime h1 {
+        font-size: x-large;
+    }
+
+    .bornCrime h2 {
+        font-size: large;
+    }
+
+    .bornCrime p {
+        line-height: 1;
+        font-size: 15px;
+    }
+
+    .bornCrime button {
+        width: 20vw;
+        font-size: 0.7rem;
+        border-radius: 8px;
+        color: #234457;
+        cursor: pointer;
+        margin-bottom: 5vh;
+
+    }
+
+    .aboutAuthor {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -40% auto 0;
+    }
+
+    .author {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        margin-top: 55%;
+    }
+
+    .author img {
+        width: 80%;
+        /* height: auto; */
+        border-radius: 5px;
+    }
+
+    .author p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .author span {
+        font-weight: bold;
+    }
+
+    .author h2 {
+        color: #A61F2B;
+        font-size: 1.2rem;
+    }
+
+    .book-theme-section {
+        margin-top: -20%;
+        background-color: #F2F2F0;
+
+        h1 {
+            font-size: x-large;
+            margin: auto;
+        }
+
+        img {
+            height: 30vw;
+        }
+    }
+
+    .themes {
+        display: flex;
+        gap: 20px;
+    }
+
+    #theme {
+        padding-top: 15vh;
+        padding-bottom: 5vh;
+    }
+
+    .theme {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .themes-topic {
+        margin-left: -15%;
+        width: 20vw;
+        font-size: small;
+
+        a {
+            font-size: small;
+        }
+    }
+
+    .theme h2 {
+        font-size: large;
+        width: 50vw;
+    }
+
+    .theme-content {
+        overflow-y: auto;
+        width: 60vw;
+    }
+
+    .theme-content p {
+        font-size: 16px;
+    }
+
+    .theme-navigations {
+        /* Hide navigation on small screens */
+    }
+
+    .summary-section {
+        h1 {
+            font-size: xx-large;
+            margin-top: -5%;
+        }
+
+        p {
+            width: 55%;
+        }
+
+
+
+
+
+    }}
+
+
+    @media screen and (min-width: 751px) and (max-width: 999px) {
+
+        .advert {
+            font-size: x-small;
+            padding: 1vh;
+            height: 3vh;
+        }
+    
+        nav {
+            width: 100vw;
+            text-align: center;
+            gap: 1vw;
+    
+            img {
+                height: 25px;
+            }
+    
+            a {
+                font-size: small;
+                margin-left: 3%;
+            }
+        }
+    
+        .hide {
+            display: none;
+        }
+    
+        .nav-links {
+            width: 100%;
+        }
+    
+        .bookCover {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: auto;
+        }
+    
+        .bookCover img {
+            position: absolute;
+            top: 28vh;
+            left: 15vw;
+        }
+    
+        .bornCrime {
+            width: 50%;
+            margin-left: 5%;
+            margin-top: 0%;
+            margin-top: -30%;
+        }
+    
+        .bornCrime h1 {
+            font-size: x-large;
+        }
+    
+        .bornCrime h2 {
+            font-size: large;
+        }
+    
+        .bornCrime p {
+            line-height: 1;
+            font-size: 15px;
+        }
+    
+        .bornCrime button {
+            width: 20vw;
+            font-size: 0.7rem;
+            border-radius: 8px;
+            color: #234457;
+            cursor: pointer;
+            margin-bottom: 5vh;
+    
+        }
+    
+        .aboutAuthor {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: -40% auto 0;
+        }
+    
+        .author {
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            margin-top: 55%;
+        }
+    
+        .author img {
+            width: 80%;
+            /* height: auto; */
+            border-radius: 5px;
+        }
+    
+        .author p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            width: 100%;
+        }
+    
+        .author span {
+            font-weight: bold;
+        }
+    
+        .author h2 {
+            color: #A61F2B;
+            font-size: 1.2rem;
+        }
+    
+        .book-theme-section {
+            margin-top: -20%;
+            background-color: #F2F2F0;
+    
+            h1 {
+                font-size: x-large;
+                margin: auto;
+            }
+    
+            img {
+                height: 30vw;
+            }
+        }
+    
+        .themes {
+            display: flex;
+            gap: 20px;
+        }
+    
+        #theme {
+            padding-top: 15vh;
+            padding-bottom: 5vh;
+        }
+    
+        .theme {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .themes-topic {
+            margin-left: -15%;
+            width: 20vw;
+            font-size: small;
+    
+            a {
+                font-size: small;
+            }
+        }
+    
+        .theme h2 {
+            font-size: large;
+            width: 50vw;
+        }
+    
+        .theme-content {
+            overflow-y: auto;
+            width: 60vw;
+        }
+    
+        .theme-content p {
+            font-size: 16px;
+        }
+    
+        .theme-navigations {
+            /* Hide navigation on small screens */
+        }
+    
+        .summary-section {
+            h1 {
+                font-size: xx-large;
+                margin-top: -5%;
+            }
+    
+            p {
+                width: 55%;
+            }
+    
+    
+    
+    
+    
+        }}
+
+
+
+
+        @media screen and (min-width: 1000px) and (max-width: 1300px) {
+
+            .advert {
+                font-size: x-small;
+                padding: 1vh;
+                height: 3vh;
+            }
+        
+            nav {
+                width: 100vw;
+                text-align: center;
+                gap: 1vw;
+        
+                img {
+                    height: 25px;
+                }
+        
+                a {
+                    font-size: small;
+                    margin-left: 3%;
+                }
+            }
+        
+            .hide {
+                display: none;
+            }
+        
+            .nav-links {
+                width: 100%;
+            }
+        
+            .bookCover {
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: auto;
+            }
+        
+            .bookCover img {
+                position: absolute;
+                top: 28vh;
+                left: 15vw;
+            }
+        
+            .bornCrime {
+                width: 50%;
+                margin-left: 5%;
+                margin-top: 0%;
+                margin-top: -30%;
+            }
+        
+            .bornCrime h1 {
+                font-size: x-large;
+            }
+        
+            .bornCrime h2 {
+                font-size: large;
+            }
+        
+            .bornCrime p {
+                line-height: 1;
+                font-size: 15px;
+            }
+        
+            .bornCrime button {
+                width: 20vw;
+                font-size: 0.7rem;
+                border-radius: 8px;
+                color: #234457;
+                cursor: pointer;
+                margin-bottom: 5vh;
+        
+            }
+        
+            .aboutAuthor {
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: -40% auto 0;
+            }
+        
+            .author {
+                /* display: flex; */
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                text-align: center;
+                margin-top: 55%;
+            }
+        
+            .author img {
+                width: 80%;
+                /* height: auto; */
+                border-radius: 5px;
+            }
+        
+            .author p {
+                font-size: 0.9rem;
+                line-height: 1.5;
+                width: 100%;
+            }
+        
+            .author span {
+                font-weight: bold;
+            }
+        
+            .author h2 {
+                color: #A61F2B;
+                font-size: 1.2rem;
+            }
+        
+            .book-theme-section {
+                margin-top: -20%;
+                background-color: #F2F2F0;
+        
+                h1 {
+                    font-size: x-large;
+                    margin: auto;
+                }
+        
+                img {
+                    height: 30vw;
+                }
+            }
+        
+            .themes {
+                display: flex;
+                gap: 20px;
+            }
+        
+            #theme {
+                padding-top: 15vh;
+                padding-bottom: 5vh;
+            }
+        
+            .theme {
+                width: 100%;
+                flex-direction: column;
+            }
+        
+            .themes-topic {
+                margin-left: -15%;
+                width: 20vw;
+                font-size: small;
+        
+                a {
+                    font-size: small;
+                }
+            }
+        
+            .theme h2 {
+                font-size: large;
+                width: 50vw;
+            }
+        
+            .theme-content {
+                overflow-y: auto;
+                width: 60vw;
+            }
+        
+            .theme-content p {
+                font-size: 16px;
+            }
+        
+            .theme-navigations {
+                /* Hide navigation on small screens */
+            }
+        
+            .summary-section {
+                h1 {
+                    font-size: xx-large;
+                    margin-top: -5%;
+                }
+        
+                p {
+                    width: 55%;
+                }
+        
+        
+        
+        
+        
+            }}
